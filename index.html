@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CoolAid Refridgeration</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXJBVDf7R4JqmSpopVPoduIGWx1IwpBM"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+</head>
+
+<body>
+
+  
+  <div class="svg-wrap">
+    <svg width="64" height="64" viewBox="0 0 64 64">
+      <path id="arrow-left"
+        d="M26.667 10.667q1.104 0 1.885 0.781t0.781 1.885q0 1.125-0.792 1.896l-14.104 14.104h41.563q1.104 0 1.885 0.781t0.781 1.885-0.781 1.885-1.885 0.781h-41.563l14.104 14.104q0.792 0.771 0.792 1.896 0 1.104-0.781 1.885t-1.885 0.781q-1.125 0-1.896-0.771l-18.667-18.667q-0.771-0.813-0.771-1.896t0.771-1.896l18.667-18.667q0.792-0.771 1.896-0.771z">
+      </path>
+    </svg>
+
+    <svg width="64" height="64" viewBox="0 0 64 64">
+      <path id="arrow-right"
+        d="M37.333 10.667q1.125 0 1.896 0.771l18.667 18.667q0.771 0.771 0.771 1.896t-0.771 1.896l-18.667 18.667q-0.771 0.771-1.896 0.771-1.146 0-1.906-0.76t-0.76-1.906q0-1.125 0.771-1.896l14.125-14.104h-41.563q-1.104 0-1.885-0.781t-0.781-1.885 0.781-1.885 1.885-0.781h41.563l-14.125-14.104q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z">
+      </path>
+    </svg>
+  </div>
+
+
+  <!-- MAIN CONTENT -->
+
+  <div class="container-fluid">
+
+    <!-- HEADER -->
+
+    <section id="header">
+
+      <!-- NAVIGATION -->
+      <nav class="navbar navbar-fixed-top navbar-default bottom">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#header">CoolAid Refridgeration</a>
+          </div>
+          <!-- /.navbar-header -->
+
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#info">Info</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container -->
+      </nav>
+
+      <!-- SLIDER -->
+      <div class="header-slide">
+        <section>
+          <div id="loader" class="pageload-overlay" data-opening="M 0,0 0,60 80,60 80,0 z M 80,0 40,30 0,60 40,30 z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60"
+              preserveAspectRatio="none">
+              <path d="M 0,0 0,60 80,60 80,0 Z M 80,0 80,60 0,60 0,0 Z" />
+            </svg>
+          </div> <!-- /.pageload-overlay -->
+
+          <div class="image-slide bg-fixed">
+            <div class="overlay">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <div class="slider-content">
+                      <h1></h1>
+                      <p>CoolAid Refridgeration</p>
+                    </div>
+
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+
+          <nav class="nav-slide">
+            <a class="prev" href="#prev">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-left">
+                </svg>
+              </span>
+              <div>
+                <span></span>
+                <h3>.</h3>
+                <p>.</p>
+                <img alt="Previous thumb">
+              </div>
+            </a>
+            <a class="next" href="#next">
+              <span class="icon-wrap">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64">
+                  <use xlink:href="#arrow-right">
+                </svg>
+              </span>
+              <div>
+                <span>Next Photo</span>
+                <h3>...</h3>
+                <p>...</p>
+                <img alt="Next thumb">
+              </div>
+            </a>
+          </nav>
+        </section>
+
+        <script type="text/javascript">
+          var dataHeader = [
+            {
+              bigImage: "images/slide-1.jpg",
+              title: "Welcome our Customers ",
+              author: "CoolAid Refridgeration"
+            },
+            {
+              bigImage: "images/slide-2.jpg",
+              title: "Welcome our Customers ",
+              author: "CoolAid Refridgeration"
+            },
+            {
+              bigImage: "images/slide-3.jpg",
+              title: "Welcome our Customers ",
+              author: "CoolAid Refridgeration"
+            }
+          ],
+            loaderSVG = new SVGLoader(document.getElementById('loader'), { speedIn: 500, speedOut: 500, easingIn: mina.easeinout });
+          loaderSVG.show()
+        </script>
+
+      </div>
+      <!-- /.header-slide -->
+    </section>
+
+    <!-- HEADER END -->
+
+
+    <!-- ABOUT -->
+
+    <section id="about" class="light">
+      <header class="title">
+        <h2>About <span>Us</span></h2>
+        <p> We are a very passionate when it comes to our job and satisfying our customers needs.</p> <br> Check us out
+          <strong style="color: red;">CoolAid</strong> You can trust us to deliver services around Gauteng, we fix all types of Refrigerators at an affordable price, No Job is small or big to us.
+        </p>
+      </header>
+
+      <div class="container">
+        <div class="row table-row">
+          <div class="col-sm-6 hidden-xs">
+            <div class="section-content">
+              <div class="big-image" style="background-image:url(images/1.png)"></div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="section-content">
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-cube"></i></div>
+                <div class="about-detail">
+                  <h4>Re-gas</h4>
+                  <p>Do you have a fridge that needs gas only? we come to you and refill it at an affordable price, 
+                    you can choose to buy your own to cut the cost and we will only charge you the labour or we can do everything
+                    and still charge you an affordable price for that.</p>
+                </div>
+              </div>
+
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-cube"></i></div>
+                <div class="about-detail">
+                  <h4>Compressor Installation</h4>
+                  <p>Loadshedding and bad current can kill your Compressor, we don't want you to be troubled with lots
+                  of fresh products in your fridge that might get spoiled in this bad economy, talk to us and we will supply
+                  you with quality Compressors and Install it in time at an affordable price "don't forget haha".</p>
+                </div>
+              </div>
+
+              <div class="about-content left animated" data-animate="fadeInLeft">
+                <div class="about-icon"><i class="fa fa-cube"></i></div>
+                <div class="about-detail">
+                  <h4>General Meintainance</h4>
+                  <p>If you have a fridge or air condition that is not working for whatever reason call us and we will
+                    diognise the problem and fix it for you, we would be happy .</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.row table-row -->
+      </div> <!-- /.container -->
+    </section>
+
+
+    <!-- PORTFOLIO -->
+
+    <section id="portfolio" class="light">
+      <header class="title">
+        <h2>Brands we work with and some of our work </h2>
+        <p>When it comes to brands we don't choose bring anthing Refrigeration and airconditioning and we will fix it 
+          regardles, we have also attached some of our completed Jobs we have done for our happy and  valued customers so far.</p>
+      </header>
+
+      <div class="container-fluid">
+        <div class="row">
+          <ul id="filters" class="list-inline">
+            <li data-filter="all" class="filter">All</li>
+            <li data-filter=".headphone" class="filter">Equipments</li>
+            <li data-filter=".camera" class="filter">Deep freezers</li>
+            <li data-filter=".Laptop" class="filter">Fridges</li>
+            <li data-filter=".BISWA" class="filter">Cold Rooms</li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="container-portfolio">
+            <!-- PORTFOLIO OBJECT -->
+            <script type="text/javascript">
+              var portfolio = [
+                {
+                  category: "headphone",
+                  image: "images/port/2.Jpg",
+                  title: "Compressors",
+                  link: "#none",
+                  text: "we will supply you with Durable Compressors when in need."
+                },
+                {
+                  category: "camera",
+                  image: "images/port/3.jpg",
+                  title: "Deep freezers",
+                  link: "#none",
+                  text: "We fix any kinds of Deep freezers, bring them all."
+                },
+                {
+                  category: "camera",
+                  image: "images/port/8.jpg",
+                  title: "Equipments",
+                  link: "#none",
+                  text: "we have mordern equipments to diagnose any problem with your fridge."
+                },
+                {
+                  category: "BISWA",
+                  image: "images/port/1.jpg",
+                  title: "Cold rooms",
+                  link: "#none",
+                  text: "We fix and maintain cold rooms at a cheaper rate."
+                },
+                {
+                  category: "headphone",
+                  image: "images/port/5.jpg",
+                  title: "merchandise refrigerators",
+                  link: "#none",
+                  text: "we fix merchandise without contractuals and vise versa."
+                },
+                {
+                  category: "Laptop",
+                  image: "images/port/6.jpg",
+                  title: "Spare parts",
+                  link: "#none",
+                  text: "We will buy the spare parts and install at an affordable rate."
+                },
+                {
+                  category: "Laptop",
+                  image: "images/port/4.jpg",
+                  title: "Fridge<span></span>",
+                  link: "#none",
+                  text: "."
+                },
+                {
+                  category: "Laptop",
+                  image: "images/port/7.jpg",
+                  title: "Modern Frigdes",
+                  link: "#none",
+                  text: " we have Special skills for your precious assets ."
+                }
+              ];
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- TEAM -->
+
+    <section id="team" class="light">
+      <header class="title">
+        <h2> Our <span>Team</span></h2>
+        <p>Meet our highly trained and incredible proffesional team that works tirelessly to
+           save our valued customers.</p>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown">
+              <div class="img-team">
+                <img src="images/team/team_1.jpg" alt="" class="img-circle">
+              </div>
+
+              <h3>Managing Director</h3>
+              <h5>David</h5>
+
+              <p>Mr david is a highly trained techtnician with Experience and our managing director.</p>
+
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown">
+              <div class="img-team">
+                <img src="images/team/team_1.jpg" alt="" class="img-circle">
+              </div>
+
+              <h3>technician</h3>
+              <h5>okay</h5>
+
+              <p>Our great technician that takes his job seriously and makes sure when he 
+                work you will either call us back for more Jobs or refer us to your fiends.</p>
+
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  <li><a href="#" class="fa fa-twitter"></a></li>
+                  <li><a href="#" class="fa fa-linkedin"></a></li>
+                  <li><a href="#" class="fa fa-facebook"></a></li>
+                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+               <!-- /.container -->
+    </section>
+
+
+    <section class="separator blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="0">
+              <div class="counter-icon">
+                <i class="fa fa-group"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="100"></span>
+                <small>Clients</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="500">
+              <div class="counter-icon">
+                <i class="fa fa-leaf"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="49"></span>
+                <small>5 Stars</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="1000">
+              <div class="counter-icon">
+                <i class="fa fa-gears"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="500"></span>
+                <small> Completed work</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="counter animated" data-animate="fadeInUp" data-delay="1500">
+              <div class="counter-icon">
+                <i class="fa fa-inbox"></i>
+              </div>
+              <div class="counter-content">
+                <span class="value" data-from="0" data-to="25"></span>
+                <small>Recomendations</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FOOTER CONTACT -->
+
+    <section id="contact" class="dark">
+      <header class="title">
+        <h2>Contact <span>Us</span></h2>
+        <p>Leave us a message and we will get back to you as soon as we can.</p>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 animated" data-animate="fadeInLeft">
+            <form action="#">
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="col-md-12">
+                  <textarea class="form-control" rows="3" placeholder="How can we help you today?"></textarea>
+                </div>
+                <div class="col-md-12">
+                  <button class="btn btn-default submit">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-4 animated" data-animate="fadeInRight">
+            <address>
+              <span><i class="fa fa-map-marker fa-lg"></i>Bramley, Johannesburg, South Africa</span>
+              <span><i class="fa fa-phone fa-lg"></i>+27 78 360 6105</span>
+              <span><i class="fa fa-envelope-o fa-lg"></i> <a
+                  href="mailto:duttabiswajit441@gmail.com">comingsoon&#64;gmail.com</a></span>
+              <span><i class="fa fa-inbox-o fa-lg"></i> <a
+                  href="https://chat.whatsapp.com/JmdqbeRrEkS8rPRcEhl9Qb">Whatsapp Us</a></span>
+            </address>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>All rights reserved | created for CoolAid 2024</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /.container-fluid -->
+
+  <!-- SCRIPT -->
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
